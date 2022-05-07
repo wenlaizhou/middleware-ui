@@ -1,0 +1,16 @@
+.CodeMirror {
+    /* Set height, width, borders, and global font properties here */
+    font-family: monospace;
+    height: 100%;
+}
+
+/*.CodeMirror {*/
+/*    border: 1px solid #eee;*/
+/*    height: auto;*/
+/*}*/
+
+.CodeMirror-scroll {
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
