@@ -6,9 +6,9 @@ const {Header, Content, Footer} = Layout
 
 export default () => {
 	return <Layout>
-		<Header/>
-		<Content style={{padding: "0", marginTop: 64}}>
+		<Header title={"header"}/>
+		<Content title={"content"} style={{padding: "0", marginTop: 64}}>
 		</Content>
-		<Footer/>
+		<Footer title={"footer"}/>
 	</Layout>
 }
