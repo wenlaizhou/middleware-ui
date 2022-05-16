@@ -6,7 +6,6 @@ import { prometheusDoc, restDoc, kafkaDoc, code } from "./doc"
 import ProCard from "@ant-design/pro-card"
 import { Button, Col, Divider, Menu, Row } from "antd"
 import { FireOutlined, MenuFoldOutlined, MenuUnfoldOutlined, PieChartOutlined } from "@ant-design/icons"
-import Highlight from "react-highlight"
 
 export default (props) => {
 	const [collapsed, setCollapsed] = useState(false)
@@ -70,9 +69,7 @@ export default (props) => {
 				{doc?.map(d => {
 					return <>
 						<ProCard collapsible={true} bordered={true} title={d.title} extra="" tooltip="点击可缩起" headerBordered={true}>
-							<Highlight>
-								<MarkdownDiv>{d.content}</MarkdownDiv>
-							</Highlight>
+							<MarkdownDiv>{d.content}</MarkdownDiv>
 						</ProCard>
 						<Divider/>
 					</>

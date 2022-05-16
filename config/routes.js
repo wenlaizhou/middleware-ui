@@ -21,10 +21,21 @@ export default [
 	{
 		name: "swagger",
 		path: "/swagger",
+		footerRender: false,
 		// menuRender: false,
 		// hideInMenu: false,
 		icon: "ApiOutlined",
 		component: "./Swagger",
+		access: "index",
+	},
+	{
+		name: "doc",
+		path: "/doc",
+		footerRender: false,
+		// menuRender: false,
+		// hideInMenu: false,
+		icon: "ApiOutlined",
+		component: "./Doc",
 		access: "index",
 	},
 	{
