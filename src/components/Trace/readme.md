@@ -52,5 +52,5 @@ export default (props) => {
 			</Modal>
 		</Col>
 	</Row>
-})
+}
 ```
