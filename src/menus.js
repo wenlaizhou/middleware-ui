@@ -10,6 +10,26 @@ export default {
                 icon: <SmileFilled />,
             },
             {
+                name: "runtime",
+                icon: <SmileFilled />,
+                path: "/memory",
+                routes: [
+                    {
+                        path: "/memory",
+                        name: "memory",
+                        icon: <CrownFilled />,
+                    }, {
+                        path: "/disk",
+                        name: "disk",
+                        icon: <CrownFilled />,
+                    }, {
+                        path: "/net",
+                        name: "net",
+                        icon: <CrownFilled />,
+                    }
+                ]
+            },
+            {
                 path: '/midi',
                 name: 'midi',
                 icon: <SmileFilled />,

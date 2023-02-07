@@ -1,6 +1,8 @@
 import { DoubleRightOutlined } from "@ant-design/icons"
 export default {
-	title: "Poet",
+	title: "Middleware",
+	desc: `Middleware Framework
+	Simple Powerful`,
 	logo: <DoubleRightOutlined />,
-	service: "", //"http://localhost:8088",
+	service: ""//"https://localhost:9989",
 }

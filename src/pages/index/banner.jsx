@@ -2,6 +2,7 @@ import { React } from "react"
 import { Button, Col, Image, Row, Space } from "antd"
 import bannerRight from "./images/banner-right.png"
 import { useLocation, useNavigate } from "react-router-dom"
+import config from "../../conf"
 
 export default (props) => {
 	const navigate = useNavigate()
@@ -9,8 +10,8 @@ export default (props) => {
 		<Row gutter={[24, 24]} className={"banner-back"}>
 			<Col span={10} offset={2}>
 				<Space direction={"vertical"}>
-					<h1 key={"bh1"} className={"banner-h1"}>{props.data.title}</h1>
-					<p key={"bp1"} className={"banner-content"}>{props.data.desc}</p>
+					<h1 key={"bh1"} className={"banner-h1"}>{config.title}</h1>
+					<p key={"bp1"} className={"banner-content"}>{config.desc}</p>
 					<Space
 						direction={"horizontal"}
 						style={{
@@ -44,7 +45,7 @@ export default (props) => {
 			<Col span={10}>
 				<Image src={bannerRight} style={{
 					marginTop: "30%",
-				}} preview={false}/>
+				}} preview={false} />
 			</Col>
 		</Row>
 	)

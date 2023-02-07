@@ -3,7 +3,6 @@ import { Layout, Row, Col } from "antd"
 import "./index.css"
 import "./images/banner-back.png"
 import "./images/banner-logo.png"
-import conf from "../../conf"
 import Banner from "./banner"
 import Feature from "./feature"
 import Value from "./value"
@@ -11,60 +10,49 @@ import Persona from "./persona"
 import Product from "./product"
 import Footer from "./footer"
 import Charts from "./charts"
-import Poet from "./poet"
 
-const {Content} = Layout
+const { Content } = Layout
 
 export default (props) => {
-	const [indexData, setIndexData] = useState({})
-	useEffect(() => {
-		fetch(`${conf.service}/indexData`, {
-			method: "get",
-			mode: "cors",
-			redirect: "follow",
-		}).then(r => r.json()).then(r => setIndexData(r.data)).catch(reason => {
-			console.error(reason)
-		})
-	}, [])
 	return <Layout>
-		<Content style={{padding: "0", marginTop: 0}}>
-			<Banner data={indexData}/>
+		<Content style={{ padding: "0", marginTop: 0 }}>
+			<Banner />
 			{/* <Row justify={"center"} style={{zoom: 0.8}}>
 				<Col>
 					<h1 className={"product-h1"}>美诗</h1>
 				</Col>
 			</Row>
 			<Poet/> */}
-			<Row justify={"center"} style={{zoom: 0.8}}>
+			<Row justify={"center"} style={{ zoom: 0.8 }}>
 				<Col>
 					<h1 className={"product-h1"}>数据分析</h1>
 				</Col>
 			</Row>
-			<Charts data={indexData}/>
+			<Charts />
 
-			<Row justify={"center"} style={{zoom: 0.8}}>
+			<Row justify={"center"} style={{ zoom: 0.8 }}>
 				<Col>
 					<h1 className={"product-h1"}>产品特性</h1>
 				</Col>
 			</Row>
-			<Feature data={indexData}/>
+			<Feature />
 
 			<Row gutter={24} justify={"center"}>
 				<Col><h1 className={"product-h1"}>产品价值</h1></Col>
 			</Row>
-			<Value data={indexData}/>
+			<Value />
 
 			<Row gutter={24} justify={"center"}>
 				<Col><h1 className={"product-h1"}>用户画像</h1></Col>
 			</Row>
-			<Persona data={indexData}/>
+			<Persona />
 
 			<Row gutter={24} justify={"center"}>
 				<Col><h1 className={"product-h1"}>产品动态</h1></Col>
 			</Row>
-			<Product data={indexData}/>
+			<Product />
 
-			<Footer data={indexData}/>
+			<Footer />
 		</Content>
 	</Layout>
 }
