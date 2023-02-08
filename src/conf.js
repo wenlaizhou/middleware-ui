@@ -4,5 +4,5 @@ export default {
 	desc: `Middleware Framework
 	Simple Powerful`,
 	logo: <DoubleRightOutlined />,
-	service: ""//"https://localhost:9989",
+	service: "", //"https://localhost:9989",
 }
