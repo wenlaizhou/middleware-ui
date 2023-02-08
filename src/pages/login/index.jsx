@@ -13,7 +13,8 @@ import {
     ProFormText,
     ProConfigProvider,
 } from '@ant-design/pro-components';
-import { message, Space, Tabs } from 'antd';
+import { css } from '@emotion/css';
+import { message, Space, Tabs, Image } from 'antd';
 import { useState } from 'react';
 import conf from "../../conf.js"
 
@@ -46,8 +47,10 @@ export default (props) => {
         <ProConfigProvider hashed={false}>
             <div style={{ backgroundColor: 'white' }}>
                 <LoginForm
-                    logo={<LockOutlined />}
-                    title="Poet"
+                    logo={<Image src="/login.png" className={css`
+                    margin-top: 5px;
+                    `} />}
+                    title={conf.title}
                     subTitle="登录该系统"
                     actions={
                         <Space>
