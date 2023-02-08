@@ -24,7 +24,7 @@ export default (props) => {
 							key={"bb1"}
 							type={"primary"}
 							onClick={() => {
-								navigate("/poet")
+								navigate("/memory")
 							}}
 							style={{
 								width: "200px",

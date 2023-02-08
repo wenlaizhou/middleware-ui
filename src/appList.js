@@ -3,9 +3,9 @@ export default {
     appList: [
         {
             icon: '/undraw_asterisk.svg',
-            title: 'Poet',
-            desc: 'poet',
-            url: "/poet",
+            title: 'Runtime',
+            desc: '运行时数据',
+            url: "/memory",
         },
         {
             icon: '/undraw_bar-chart.svg',

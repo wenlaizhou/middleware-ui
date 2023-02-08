@@ -1,5 +1,5 @@
 export default {
-    title: "HelloGroup",
+    title: "MenuCards",
     groups: {
         "group1": [{ title: "a", url: "/poet" }, { title: "a", url: "/poet" }, { title: "a", url: "/poet" }, { title: "a", url: "/poet" }, { title: "a", url: "/poet" }, { title: "a", url: "/poet" }],
         "group2": [{ title: "a", url: "/poet" }],

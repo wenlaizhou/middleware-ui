@@ -23,12 +23,12 @@ export default (props) => {
 				</Col>
 			</Row>
 			<Poet/> */}
-			<Row justify={"center"} style={{ zoom: 0.8 }}>
+			{/* <Row justify={"center"} style={{ zoom: 0.8 }}>
 				<Col>
 					<h1 className={"product-h1"}>数据分析</h1>
 				</Col>
 			</Row>
-			<Charts />
+			<Charts /> */}
 
 			<Row justify={"center"} style={{ zoom: 0.8 }}>
 				<Col>
