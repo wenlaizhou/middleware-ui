@@ -64,7 +64,7 @@ export default (props) => {
                     colorTextMenuSelected: "#69b1ff",
                 }
             }}>
-                <Modal open={!localStorage.getItem("login")}
+                <Modal open={config.username && config.password && !localStorage.getItem("login")}
                     maskStyle={{
                         backgroundColor: "rgb(0,0,0,0.9)",
                         filter: "grayscale(50%)"
