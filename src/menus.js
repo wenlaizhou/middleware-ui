@@ -36,8 +36,8 @@ export default {
                 flatMenu: true,
             },
             {
-                path: 'https://ant.design',
-                name: 'Ant Design 官网外链',
+                path: 'https://console.sensecore.cn/',
+                name: 'Sensecore',
                 icon: <ChromeFilled />,
             },
         ],

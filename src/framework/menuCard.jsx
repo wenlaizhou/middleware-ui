@@ -142,7 +142,10 @@ export default (props) => {
                                             }
                                         `}
                                     >
-                                        <img src="/undraw_chat.svg" />
+                                        <img className={css`
+                                        width: 50px;
+                                        height: 50px;
+                                        `} src={val.icon || "/ball.png"} />
                                         <div
                                             style={{
                                                 marginInlineStart: 14,
